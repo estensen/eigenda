@@ -137,6 +137,7 @@ func setupMockTransactor() {
 }
 
 func newTestServer(t *testing.T) *churner.Server {
+	t.Helper()
 	config := &churner.Config{
 		LoggerConfig: logging.DefaultCLIConfig(),
 		EthClientConfig: geth.EthClientConfig{

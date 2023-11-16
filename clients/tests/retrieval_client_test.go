@@ -53,6 +53,7 @@ var (
 )
 
 func setup(t *testing.T) {
+	t.Helper()
 
 	var err error
 	indexedChainState, err = coremock.NewChainDataMock(core.OperatorIndex(numOperators))
